@@ -1,0 +1,9 @@
+[{{#each images}}
+	{
+		"breakpoint": "{{ breakpoint }}",
+		"name": "{{ name }}",
+		"width": {{ width }},
+		"height": {{ height }},
+		"path": "{{ path }}"
+	}{{#if @last}}{{else}},{{/if}}{{/each}}
+]
